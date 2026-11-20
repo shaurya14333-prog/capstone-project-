@@ -1,0 +1,211 @@
+/* Tasty Bites - Web Development Project */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- Navbar ---------- */
+header {
+  background-color: #c0392b;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 17px;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom: 2px solid #ffd166;
+}
+
+#cart-box {
+  background-color: #ffd166;
+  color: #333;
+  padding: 5px 12px;
+  border-radius: 15px;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+/* ---------- Hero (Home page) ---------- */
+.hero {
+  background-color: #f39c12;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-size: 46px;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 15px 0 25px;
+  color: #fff;
+}
+
+.btn {
+  background-color: #c0392b;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #96281b;
+}
+
+/* ---------- Common sections ---------- */
+.section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  text-align: center;
+  color: #c0392b;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+/* ---------- Cards ---------- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 220px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+.card .emoji {
+  font-size: 55px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.price {
+  color: #27ae60;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #96281b;
+}
+
+/* ---------- About page ---------- */
+.about-text {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Contact form ---------- */
+form {
+  background-color: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+form button {
+  margin-top: 18px;
+}
+
+#msg {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 50px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  nav a {
+    margin: 0 10px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+}
